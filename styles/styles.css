@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-canvas);
+}
+
+:root {
+  --bg-canvas: #FAFAF7;
+  --bg-surface: #FFFFFF;
+  --bg-elevated: #1C1A17;
+  --bg-elevated-muted: #26231F;
+  --bg-elevated-hover: #2C2823;
+  --border-subtle: #ECE9E2;
+  --border-strong: #D9D4C8;
+  --text-primary: #1C1A17;
+  --text-secondary: #6B655B;
+  --text-muted: #9C9488;
+  --text-inverse: #FAFAF7;
+  --accent-ember: #E04E2C;
+  --accent-ember-soft: #FBE5DE;
+  --accent-ember-press: #B83B1F;
+  --status-success: #3F7D52;
+  --status-success-soft: #E1EDE4;
+  --status-warning: #C7841A;
+  --status-warning-soft: #F8EFD9;
+  --status-error: #C2392B;
+  --status-error-soft: #F8E0DC;
+  --status-info: #3C6A9E;
+  --status-info-soft: #E1E8F0;
+  --focus-ring: rgba(224, 78, 44, 0.35);
+  --font-display: 'Fraunces', serif;
+  --font-ui: 'Inter', system-ui, sans-serif;
+  --r-sm: 2px;
+  --r-md: 4px;
+  --r-lg: 10px;
+  --r-xl: 12px;
+  --r-pill: 999px;
+  --shadow-card: 0 1px 2px rgba(28, 26, 23, .04), 0 1px 1px rgba(28, 26, 23, .03);
+  --shadow-pop: 0 8px 24px rgba(28, 26, 23, .12), 0 2px 6px rgba(28, 26, 23, .06);
+  --ease: cubic-bezier(.2, .8, .2, 1);
+  --dur: 140ms;
+}
+
+.sidebar {
+  height: 100%;
+  background-color: var(--bg-elevated);
+  width: 248px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.dashboard-logo {
+  font-family: var(--font-ui);
+  font-size: 14px;
+  color: var(--text-primary);
+  background-color: var(--accent-ember);
+  border-radius: 5px;
+  width: 24px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+  font-weight: bolder;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 8px;
+  gap: 10px;
+}
+
+.dashboard-name {
+  font-family: var(--font-display);
+  font-size: 18px;
+  color: var(--text-inverse);
+  font-weight: 500;
+}
+
+.sidebar-label {
+  padding: 0 12px 8px;
+  font-size: 11px;
+  font-family: var(--font-ui);
+  color: var(--text-muted);
+  font-weight: 600;
+}
