@@ -56,6 +56,11 @@ body {
   padding: 20px 16px;
   display: flex;
   flex-direction: column;
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
   gap: 32px;
 }
 
@@ -93,4 +98,50 @@ body {
   font-family: var(--font-ui);
   color: var(--text-muted);
   font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sidebar-links li {
+  list-style: none;
+}
+
+.sidebar-links a {
+  display: flex;
+  align-items: center;
+  font-family: var(--font-ui);
+  color: var(--text-inverse);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 12px;
+  cursor: pointer;
+  gap: 12px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.sidebar-links a svg {
+  width: 20px;
+  height: 20px;
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  color: var(--text-muted);
+  padding: 0 12px;
+  font-size: 11px;
+  font-family: var(--font-ui);
+}
+
+/*script classes*/
+
+.active {
+  background-color: var(--bg-elevated-hover);
+}
+
+/*Hover Effects*/
+
+.sidebar-links a:hover {
+  background-color: var(--bg-elevated-hover);
 }
