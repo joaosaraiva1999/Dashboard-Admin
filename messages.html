@@ -8,62 +8,138 @@
     <script src="https://unpkg.com/lucide@latest"></script>
   </head>
   <body>
-    <nav class="sidebar">
-      <section class="sidebar-content">
-        <div class="sidebar-header">
-          <div class="dashboard-logo">A</div>
-          <div class="dashboard-name">Admin</div>
-        </div>
-        <div class="sidebar-label">
-          <span>WORKSPACE</span>
+    <main class="app">
+      <nav class="sidebar">
+        <section class="sidebar-content">
+          <div class="sidebar-header">
+            <div class="dashboard-logo">A</div>
+            <div class="dashboard-name">Admin</div>
+          </div>
+          <div class="sidebar-label">
+            <span>WORKSPACE</span>
+            <div class="sidebar-links">
+              <ul>
+                <li>
+                  <a href="index.html"
+                    ><i data-lucide="layout-dashboard"></i>Dashboard</a
+                  >
+                </li>
+                <li>
+                  <a href="projects.html"
+                    ><i data-lucide="folder"></i>Projects</a
+                  >
+                </li>
+                <li>
+                  <a href="tasks.html"
+                    ><i data-lucide="check-square"></i>Tasks</a
+                  >
+                </li>
+                <li>
+                  <a href="messages.html"
+                    ><i data-lucide="message-square"></i>Messages</a
+                  >
+                </li>
+                <li>
+                  <a href="announcements.html"
+                    ><i data-lucide="megaphone"></i>Announcements</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="sidebar-label">
+            <span>ACCOUNT</span>
+            <div class="sidebar-links">
+              <ul>
+                <li>
+                  <a href="settings.html"
+                    ><i data-lucide="settings"></i>Settings</a
+                  >
+                </li>
+                <li>
+                  <a href="support.html"
+                    ><i data-lucide="help-circle"></i>Support</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="sidebar-content-smallver">
+          <div class="sidebar-header">
+            <div class="dashboard-logo">A</div>
+          </div>
+
           <div class="sidebar-links">
             <ul>
               <li>
-                <a href="index.html"
-                  ><i data-lucide="layout-dashboard"></i>Dashboard</a
-                >
+                <a href="index.html"><i data-lucide="layout-dashboard"></i></a>
               </li>
               <li>
-                <a href="projects.html"><i data-lucide="folder"></i>Projects</a>
+                <a href="projects.html"><i data-lucide="folder"></i></a>
               </li>
               <li>
-                <a href="tasks.html"><i data-lucide="check-square"></i>Tasks</a>
+                <a href="tasks.html"><i data-lucide="check-square"></i></a>
               </li>
               <li>
-                <a href="messages.html"
-                  ><i data-lucide="message-square"></i>Messages</a
-                >
+                <a href="messages.html"><i data-lucide="message-square"></i></a>
               </li>
               <li>
-                <a href="announcements.html"
-                  ><i data-lucide="megaphone"></i>Announcements</a
-                >
+                <a href="announcements.html"><i data-lucide="megaphone"></i></a>
               </li>
             </ul>
           </div>
-        </div>
-        <div class="sidebar-label">
-          <span>ACCOUNT</span>
+
           <div class="sidebar-links">
             <ul>
               <li>
-                <a href="settings.html"
-                  ><i data-lucide="settings"></i>Settings</a
-                >
+                <a href="settings.html"><i data-lucide="settings"></i></a>
               </li>
               <li>
-                <a href="support.html"
-                  ><i data-lucide="help-circle"></i>Support</a
-                >
+                <a href="support.html"><i data-lucide="help-circle"></i></a>
               </li>
             </ul>
           </div>
+        </section>
+        <section class="sidebar-footer">
+          <span>© 2026 Admin Terms · Privacy</span>
+        </section>
+      </nav>
+      <section class="content-section-header">
+        <button class="icon-btn">
+          <i data-lucide="menu"></i>
+        </button>
+        <button class="header-search">
+          <i data-lucide="search"></i>
+          <span>Search Helm...</span>
+        </button>
+        <div class="header-actions">
+          <button class="header-upload">
+            <i data-lucide="upload"></i>
+            <span>Upload</span>
+          </button>
+          <button class="header-share">
+            <i data-lucide="share-2"></i>
+            <span>Share</span>
+          </button>
+          <button class="header-new">
+            <i data-lucide="plus"></i>
+            <span>New</span>
+          </button>
+          <button class="header-notifications" aria-label="Notifications">
+            <i data-lucide="bell"></i>
+            <span class="notification-dot" aria-hidden="true"></span>
+          </button>
+          <button class="header-profile">
+            <div class="profile-pic">
+              <img src="assets/img/person.svg" alt="Profile Picture" />
+            </div>
+            <span>Mister Admin</span>
+          </button>
         </div>
       </section>
-      <section class="sidebar-footer">
-        <span>© 2026 Admin Terms · Privacy</span>
-      </section>
-    </nav>
+      <section class="content-section-main"></section>
+    </main>
   </body>
   <script src="scripts/script.js"></script>
 </html>
