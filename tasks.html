@@ -9,6 +9,57 @@
   </head>
   <body>
     <main class="app">
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <label class="modal-search" for="modal-search-input">
+              <i data-lucide="search" aria-hidden="true"></i>
+              <input
+                id="modal-search-input"
+                type="search"
+                placeholder="Search projects, people, announcements..."
+                aria-label="Search projects, people, announcements"
+              />
+            </label>
+          </div>
+          <div class="modal-body">
+            <section class="modal-group" aria-labelledby="modal-projects-title">
+              <h2 id="modal-projects-title" class="modal-group-title">
+                Projects
+              </h2>
+              <button class="modal-result is-selected" type="button">
+                <i data-lucide="folder" aria-hidden="true"></i>
+                <span>Atlas Migration</span>
+              </button>
+              <button class="modal-result" type="button">
+                <i data-lucide="folder" aria-hidden="true"></i>
+                <span>Onboarding v3</span>
+              </button>
+            </section>
+
+            <section class="modal-group" aria-labelledby="modal-people-title">
+              <h2 id="modal-people-title" class="modal-group-title">People</h2>
+              <button class="modal-result" type="button">
+                <i data-lucide="user-round" aria-hidden="true"></i>
+                <span>Priya Nair (Design Lead)</span>
+              </button>
+            </section>
+
+            <section
+              class="modal-group"
+              aria-labelledby="modal-announcements-title"
+            >
+              <h2 id="modal-announcements-title" class="modal-group-title">
+                Announcements
+              </h2>
+              <button class="modal-result" type="button">
+                <i data-lucide="send" aria-hidden="true"></i>
+                <span>SOC 2 access reviews due Friday</span>
+              </button>
+            </section>
+          </div>
+        </div>
+      </div>
       <nav class="sidebar">
         <section class="sidebar-content">
           <div class="sidebar-header">

@@ -11,6 +11,8 @@ const smallSideBarContent = document.querySelector('.sidebar-content-smallver')
 const app = document.querySelector('.app')
 const iconBtn = document.querySelector('.icon-btn')
 const sidebarFooter = document.querySelector('.sidebar-footer')
+const headerSearch = document.querySelector('.header-search')
+const modal = document.querySelector('.modal')
 
 document.querySelectorAll('.sidebar-links li a').forEach(link => {
   const linkPage = link.getAttribute('href')
@@ -32,3 +34,14 @@ iconBtn.addEventListener('click', () => {
     sidebarFooter.style.display = 'block';
   }
 })
+
+headerSearch.addEventListener('click', () => {
+  modal.style.display = 'block'
+})
+
+window.addEventListener('click', (Event) => {
+  if (Event.target == modal) {
+    modal.style.display = 'none'
+  }
+})
+
