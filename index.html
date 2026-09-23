@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/styles.css" />
     <script src="https://unpkg.com/lucide@latest"></script>
   </head>
@@ -45,7 +49,10 @@
               </button>
             </section>
 
-            <section class="modal-group" aria-labelledby="modal-announcements-title">
+            <section
+              class="modal-group"
+              aria-labelledby="modal-announcements-title"
+            >
               <h2 id="modal-announcements-title" class="modal-group-title">
                 Announcements
               </h2>
@@ -186,7 +193,269 @@
           </button>
         </div>
       </section>
-      <section class="content-section-main"></section>
+      <section class="content-section-main">
+        <h1 class="main-title">Good morning, Admin</h1>
+        <p class="main-subtext">
+          You have <b> 3 items needing attention</b> today. Two projects are at
+          risk and one announcement requires action.
+        </p>
+        <div class="main-notifications-grid">
+          <div class="notifications-grid-card">
+            <span class="card-label">Active projects</span>
+            <strong class="card-value">4</strong>
+          </div>
+          <div class="notifications-grid-card">
+            <span class="card-label">Tasks due</span>
+            <strong class="card-value">12</strong>
+          </div>
+          <div class="notifications-grid-card">
+            <span class="card-label">Unread mentions</span>
+            <strong class="card-value">3</strong>
+          </div>
+          <div class="notifications-grid-card">
+            <span class="card-label">New announcements</span>
+            <strong class="card-value">2</strong>
+          </div>
+        </div>
+        <div class="content-grid">
+          <section class="projects-section">
+            <div class="projects-header">
+              <h2>Your Projects</h2>
+              <button class="view-btn">View All</button>
+            </div>
+            <div class="projects-grid">
+              <article class="projects-card">
+                <div class="project-card-header">
+                  <div>
+                    <h3 class="project-card-title">Atlas Migration</h3>
+                    <div class="project-card-meta">
+                      <span class="project-avatar avatar-mira" aria-hidden="true">
+                        <img src="assets/img/person.svg" alt="" />
+                      </span>
+                      <span>Mira Okonkwo</span>
+                      <span aria-hidden="true">·</span>
+                      <span>Due Aug 28</span>
+                    </div>
+                  </div>
+                  <span class="project-status status-on-track">
+                    <span class="status-dot" aria-hidden="true"></span>
+                    ON TRACK
+                  </span>
+                </div>
+                <p class="project-description">
+                  Move analytics warehouse to the new columnar store; cutover
+                  window locked for sprint 14.
+                </p>
+                <div class="project-progress-header">
+                  <span>Progress</span>
+                  <span>64%</span>
+                </div>
+                <div class="project-progress" aria-label="64% complete">
+                  <span style="width: 64%"></span>
+                </div>
+                <div class="project-card-footer">
+                  <span class="project-comments">
+                    <i data-lucide="message-square" aria-hidden="true"></i>
+                    <span>8</span>
+                  </span>
+                  <a href="projects.html">Open <span aria-hidden="true">→</span></a>
+                </div>
+              </article>
+
+              <article class="projects-card">
+                <div class="project-card-header">
+                  <div>
+                    <h3 class="project-card-title">Onboarding v3</h3>
+                    <div class="project-card-meta">
+                      <span class="project-avatar avatar-daniel" aria-hidden="true">
+                        <img src="assets/img/person.svg" alt="" />
+                      </span>
+                      <span>Daniel Reyes</span>
+                      <span aria-hidden="true">·</span>
+                      <span>Due Sep 04</span>
+                    </div>
+                  </div>
+                  <span class="project-status status-at-risk">
+                    <span class="status-dot" aria-hidden="true"></span>
+                    AT RISK
+                  </span>
+                </div>
+                <p class="project-description">
+                  Three-step sign-up flow; blocked on legal review of the
+                  consent copy.
+                </p>
+                <div class="project-progress-header">
+                  <span>Progress</span>
+                  <span>38%</span>
+                </div>
+                <div class="project-progress" aria-label="38% complete">
+                  <span style="width: 38%"></span>
+                </div>
+                <div class="project-card-footer">
+                  <span class="project-comments">
+                    <i data-lucide="message-square" aria-hidden="true"></i>
+                    <span>14</span>
+                  </span>
+                  <a href="projects.html">Open <span aria-hidden="true">→</span></a>
+                </div>
+              </article>
+
+              <article class="projects-card">
+                <div class="project-card-header">
+                  <div>
+                    <h3 class="project-card-title">Q3 Brand Refresh</h3>
+                    <div class="project-card-meta">
+                      <span class="project-avatar avatar-priya" aria-hidden="true">
+                        <img src="assets/img/person.svg" alt="" />
+                      </span>
+                      <span>Priya Nair</span>
+                      <span aria-hidden="true">·</span>
+                      <span>Due Sep 30</span>
+                    </div>
+                  </div>
+                  <span class="project-status status-planning">
+                    <span class="status-dot" aria-hidden="true"></span>
+                    PLANNING
+                  </span>
+                </div>
+                <p class="project-description">
+                  Audit current visual identity and propose updated system for
+                  Q4 rollout.
+                </p>
+                <div class="project-progress-header">
+                  <span>Progress</span>
+                  <span>12%</span>
+                </div>
+                <div class="project-progress" aria-label="12% complete">
+                  <span style="width: 12%"></span>
+                </div>
+                <div class="project-card-footer">
+                  <span class="project-comments">
+                    <i data-lucide="message-square" aria-hidden="true"></i>
+                    <span>2</span>
+                  </span>
+                  <a href="projects.html">Open <span aria-hidden="true">→</span></a>
+                </div>
+              </article>
+
+              <article class="projects-card">
+                <div class="project-card-header">
+                  <div>
+                    <h3 class="project-card-title">Mobile Analytics v2</h3>
+                    <div class="project-card-meta">
+                      <span class="project-avatar avatar-elena" aria-hidden="true">
+                        <img src="assets/img/person.svg" alt="" />
+                      </span>
+                      <span>Elena Park</span>
+                      <span aria-hidden="true">·</span>
+                      <span>Due Oct 11</span>
+                    </div>
+                  </div>
+                  <span class="project-status status-on-track">
+                    <span class="status-dot" aria-hidden="true"></span>
+                    ON TRACK
+                  </span>
+                </div>
+                <p class="project-description">
+                  Consolidate event tracking across the mobile apps and validate
+                  the new funnel definitions.
+                </p>
+                <div class="project-progress-header">
+                  <span>Progress</span>
+                  <span>72%</span>
+                </div>
+                <div class="project-progress" aria-label="72% complete">
+                  <span style="width: 72%"></span>
+                </div>
+                <div class="project-card-footer">
+                  <span class="project-comments">
+                    <i data-lucide="message-square" aria-hidden="true"></i>
+                    <span>6</span>
+                  </span>
+                  <a href="projects.html">Open <span aria-hidden="true">→</span></a>
+                </div>
+              </article>
+
+              <article class="projects-card">
+                <div class="project-card-header">
+                  <div>
+                    <h3 class="project-card-title">Vendor Security Review</h3>
+                    <div class="project-card-meta">
+                      <span class="project-avatar avatar-lucas" aria-hidden="true">
+                        <img src="assets/img/person.svg" alt="" />
+                      </span>
+                      <span>Lucas Martins</span>
+                      <span aria-hidden="true">·</span>
+                      <span>Due Oct 18</span>
+                    </div>
+                  </div>
+                  <span class="project-status status-at-risk">
+                    <span class="status-dot" aria-hidden="true"></span>
+                    AT RISK
+                  </span>
+                </div>
+                <p class="project-description">
+                  Complete evidence collection and close the remaining
+                  access-control findings.
+                </p>
+                <div class="project-progress-header">
+                  <span>Progress</span>
+                  <span>45%</span>
+                </div>
+                <div class="project-progress" aria-label="45% complete">
+                  <span style="width: 45%"></span>
+                </div>
+                <div class="project-card-footer">
+                  <span class="project-comments">
+                    <i data-lucide="message-square" aria-hidden="true"></i>
+                    <span>11</span>
+                  </span>
+                  <a href="projects.html">Open <span aria-hidden="true">→</span></a>
+                </div>
+              </article>
+
+              <article class="projects-card">
+                <div class="project-card-header">
+                  <div>
+                    <h3 class="project-card-title">Q4 Campaign Toolkit</h3>
+                    <div class="project-card-meta">
+                      <span class="project-avatar avatar-aisha" aria-hidden="true">
+                        <img src="assets/img/person.svg" alt="" />
+                      </span>
+                      <span>Aisha Bello</span>
+                      <span aria-hidden="true">·</span>
+                      <span>Due Nov 02</span>
+                    </div>
+                  </div>
+                  <span class="project-status status-planning">
+                    <span class="status-dot" aria-hidden="true"></span>
+                    PLANNING
+                  </span>
+                </div>
+                <p class="project-description">
+                  Build the launch templates, messaging guide, and handoff
+                  package for regional teams.
+                </p>
+                <div class="project-progress-header">
+                  <span>Progress</span>
+                  <span>24%</span>
+                </div>
+                <div class="project-progress" aria-label="24% complete">
+                  <span style="width: 24%"></span>
+                </div>
+                <div class="project-card-footer">
+                  <span class="project-comments">
+                    <i data-lucide="message-square" aria-hidden="true"></i>
+                    <span>4</span>
+                  </span>
+                  <a href="projects.html">Open <span aria-hidden="true">→</span></a>
+                </div>
+              </article>
+            </div>
+          </section>
+          <aside class="announcements-section"></aside>
+        </div>
+      </section>
     </main>
   </body>
   <script src="scripts/script.js"></script>
