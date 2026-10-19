@@ -1,206 +1,254 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="styles/styles.css" />
-    <script src="https://unpkg.com/lucide@latest"></script>
-  </head>
-  <body>
-    <main class="app">
-      <div id="myModal" class="modal">
-        <div class="modal-content">
-          <div class="modal-header">
-            <label class="modal-search" for="modal-search-input">
-              <i data-lucide="search" aria-hidden="true"></i>
-              <input
-                id="modal-search-input"
-                type="search"
-                placeholder="Search projects, people, announcements..."
-                aria-label="Search projects, people, announcements"
-              />
-            </label>
-          </div>
-          <div class="modal-body">
-            <section class="modal-group" aria-labelledby="modal-projects-title">
-              <h2 id="modal-projects-title" class="modal-group-title">
-                Projects
-              </h2>
-              <button class="modal-result is-selected" type="button">
-                <i data-lucide="folder" aria-hidden="true"></i>
-                <span>Atlas Migration</span>
-              </button>
-              <button class="modal-result" type="button">
-                <i data-lucide="folder" aria-hidden="true"></i>
-                <span>Onboarding v3</span>
-              </button>
-            </section>
 
-            <section class="modal-group" aria-labelledby="modal-people-title">
-              <h2 id="modal-people-title" class="modal-group-title">People</h2>
-              <button class="modal-result" type="button">
-                <i data-lucide="user-round" aria-hidden="true"></i>
-                <span>Priya Nair (Design Lead)</span>
-              </button>
-            </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
 
-            <section class="modal-group" aria-labelledby="modal-announcements-title">
-              <h2 id="modal-announcements-title" class="modal-group-title">
-                Announcements
-              </h2>
-              <button class="modal-result" type="button">
-                <i data-lucide="send" aria-hidden="true"></i>
-                <span>SOC 2 access reviews due Friday</span>
-              </button>
-            </section>
-          </div>
+<body>
+  <main class="app">
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <label class="modal-search" for="modal-search-input">
+            <i data-lucide="search" aria-hidden="true"></i>
+            <input id="modal-search-input" type="search" placeholder="Search projects, people, announcements..."
+              aria-label="Search projects, people, announcements" />
+          </label>
+        </div>
+        <div class="modal-body">
+          <section class="modal-group" aria-labelledby="modal-projects-title">
+            <h2 id="modal-projects-title" class="modal-group-title">
+              Projects
+            </h2>
+            <button class="modal-result is-selected" type="button">
+              <i data-lucide="folder" aria-hidden="true"></i>
+              <span>Atlas Migration</span>
+            </button>
+            <button class="modal-result" type="button">
+              <i data-lucide="folder" aria-hidden="true"></i>
+              <span>Onboarding v3</span>
+            </button>
+          </section>
+
+          <section class="modal-group" aria-labelledby="modal-people-title">
+            <h2 id="modal-people-title" class="modal-group-title">People</h2>
+            <button class="modal-result" type="button">
+              <i data-lucide="user-round" aria-hidden="true"></i>
+              <span>Priya Nair (Design Lead)</span>
+            </button>
+          </section>
+
+          <section class="modal-group" aria-labelledby="modal-announcements-title">
+            <h2 id="modal-announcements-title" class="modal-group-title">
+              Announcements
+            </h2>
+            <button class="modal-result" type="button">
+              <i data-lucide="send" aria-hidden="true"></i>
+              <span>SOC 2 access reviews due Friday</span>
+            </button>
+          </section>
         </div>
       </div>
-      <nav class="sidebar">
-        <section class="sidebar-content">
-          <div class="sidebar-header">
-            <div class="dashboard-logo">A</div>
-            <div class="dashboard-name">Admin</div>
-          </div>
-          <div class="sidebar-label">
-            <span>WORKSPACE</span>
-            <div class="sidebar-links">
-              <ul>
-                <li>
-                  <a href="index.html"
-                    ><i data-lucide="layout-dashboard"></i>Dashboard</a
-                  >
-                </li>
-                <li>
-                  <a href="projects.html"
-                    ><i data-lucide="folder"></i>Projects</a
-                  >
-                </li>
-                <li>
-                  <a href="tasks.html"
-                    ><i data-lucide="check-square"></i>Tasks</a
-                  >
-                </li>
-                <li>
-                  <a href="messages.html"
-                    ><i data-lucide="message-square"></i>Messages</a
-                  >
-                </li>
-                <li>
-                  <a href="announcements.html"
-                    ><i data-lucide="megaphone"></i>Announcements</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="sidebar-label">
-            <span>ACCOUNT</span>
-            <div class="sidebar-links">
-              <ul>
-                <li>
-                  <a href="settings.html"
-                    ><i data-lucide="settings"></i>Settings</a
-                  >
-                </li>
-                <li>
-                  <a href="support.html"
-                    ><i data-lucide="help-circle"></i>Support</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <section class="sidebar-content-smallver">
-          <div class="sidebar-header">
-            <div class="dashboard-logo">A</div>
-          </div>
-
+    </div>
+    <nav class="sidebar">
+      <section class="sidebar-content">
+        <div class="sidebar-header">
+          <div class="dashboard-logo">A</div>
+          <div class="dashboard-name">Admin</div>
+        </div>
+        <div class="sidebar-label">
+          <span>WORKSPACE</span>
           <div class="sidebar-links">
             <ul>
               <li>
-                <a href="index.html"><i data-lucide="layout-dashboard"></i></a>
+                <a href="index.html"><i data-lucide="layout-dashboard"></i>Dashboard</a>
               </li>
               <li>
-                <a href="projects.html"><i data-lucide="folder"></i></a>
+                <a href="projects.html"><i data-lucide="folder"></i>Projects</a>
               </li>
               <li>
-                <a href="tasks.html"><i data-lucide="check-square"></i></a>
+                <a href="tasks.html"><i data-lucide="check-square"></i>Tasks</a>
               </li>
               <li>
-                <a href="messages.html"><i data-lucide="message-square"></i></a>
+                <a href="messages.html"><i data-lucide="message-square"></i>Messages</a>
               </li>
               <li>
-                <a href="announcements.html"><i data-lucide="megaphone"></i></a>
+                <a href="announcements.html"><i data-lucide="megaphone"></i>Announcements</a>
               </li>
             </ul>
           </div>
-
+        </div>
+        <div class="sidebar-label">
+          <span>ACCOUNT</span>
           <div class="sidebar-links">
             <ul>
               <li>
-                <a href="settings.html"><i data-lucide="settings"></i></a>
+                <a href="settings.html"><i data-lucide="settings"></i>Settings</a>
               </li>
               <li>
-                <a href="support.html"><i data-lucide="help-circle"></i></a>
+                <a href="support.html"><i data-lucide="help-circle"></i>Support</a>
               </li>
             </ul>
           </div>
-        </section>
-        <section class="sidebar-footer">
-          <span>© 2026 Admin Terms · Privacy</span>
-        </section>
-      </nav>
-      <section class="content-section-header">
-        <button class="icon-btn">
-          <i data-lucide="menu"></i>
+        </div>
+      </section>
+      <section class="sidebar-content-smallver">
+        <div class="sidebar-header">
+          <div class="dashboard-logo">A</div>
+        </div>
+
+        <div class="sidebar-links">
+          <ul>
+            <li>
+              <a href="index.html"><i data-lucide="layout-dashboard"></i></a>
+            </li>
+            <li>
+              <a href="projects.html"><i data-lucide="folder"></i></a>
+            </li>
+            <li>
+              <a href="tasks.html"><i data-lucide="check-square"></i></a>
+            </li>
+            <li>
+              <a href="messages.html"><i data-lucide="message-square"></i></a>
+            </li>
+            <li>
+              <a href="announcements.html"><i data-lucide="megaphone"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sidebar-links">
+          <ul>
+            <li>
+              <a href="settings.html"><i data-lucide="settings"></i></a>
+            </li>
+            <li>
+              <a href="support.html"><i data-lucide="help-circle"></i></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="sidebar-footer">
+        <span>© 2026 Admin Terms · Privacy</span>
+      </section>
+    </nav>
+    <section class="content-section-header">
+      <button class="icon-btn">
+        <i data-lucide="menu"></i>
+      </button>
+      <button class="header-search">
+        <i data-lucide="search"></i>
+        <span>Search Helm...</span>
+      </button>
+      <div class="header-actions">
+        <button class="header-upload">
+          <i data-lucide="upload"></i>
+          <span>Upload</span>
         </button>
-        <button class="header-search">
-          <i data-lucide="search"></i>
-          <span>Search Helm...</span>
+        <button class="header-share">
+          <i data-lucide="share-2"></i>
+          <span>Share</span>
         </button>
-        <div class="header-actions">
-          <button class="header-upload">
-            <i data-lucide="upload"></i>
-            <span>Upload</span>
-          </button>
+        <button class="header-new">
+          <i data-lucide="plus"></i>
+          <span>New</span>
+        </button>
+        <button class="header-notifications" aria-label="Notifications">
+          <i data-lucide="bell"></i>
+          <span class="notification-dot" aria-hidden="true"></span>
+        </button>
+        <button class="header-profile">
+          <div class="profile-pic">
+            <img src="assets/img/person.svg" alt="Profile Picture" />
+          </div>
+          <span>Mister Admin</span>
+        </button>
+      </div>
+    </section>
+    <section class="content-section-main">
+      <div class="content-main">
+        <h1>Projects</h1>
+        <div class="buttons-div">
           <button class="header-share">
-            <i data-lucide="share-2"></i>
-            <span>Share</span>
+            <span>Filter</span>
           </button>
           <button class="header-new">
             <i data-lucide="plus"></i>
-            <span>New</span>
-          </button>
-          <button class="header-notifications" aria-label="Notifications">
-            <i data-lucide="bell"></i>
-            <span class="notification-dot" aria-hidden="true"></span>
-          </button>
-          <button class="header-profile">
-            <div class="profile-pic">
-              <img src="assets/img/person.svg" alt="Profile Picture" />
-            </div>
-            <span>Mister Admin</span>
-          </button>
-        </div>
-      </section>
-      <section class="content-section-main">
-        <div class="content-main">
-          <h1>Projects</h1>
-          <div class="buttons-div">
-            <button class="header-share">
-              <span>Filter</span>
-            </button>
-            <button class="header-new">
-              <i data-lucide="plus"></i>
             <span>New Project</span>
           </button>
-          </div>
         </div>
-      </section>
-    </main>
-  </body>
-  <script src="scripts/script.js"></script>
+      </div>
+      <div class="table-section">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>PROJECT NAME</th>
+              <th>OWNER</th>
+              <th>STATUS</th>
+              <th>DUE DATE</th>
+              <th>PROGRESS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="table-project"><strong>Atlas Migration</strong><span>Analytics warehouse</span></td>
+              <td><span class="table-owner"><span class="project-avatar avatar-mira" aria-hidden="true"><img src="assets/img/person.svg" alt="" /></span>Mira Okonkwo</span></td>
+              <td>
+                <span class="project-status status-on-track">
+                  <span class="status-dot" aria-hidden="true"></span>
+                  ON TRACK
+                </span>
+              </td>
+              <td>Aug 28, 2026</td>
+              <td><div class="table-progress" role="img" aria-label="64% complete"><span style="width: 64%"></span></div><span class="table-progress-value">64%</span></td>
+            </tr>
+            <tr>
+              <td class="table-project"><strong>Onboarding v3</strong><span>User signup flow</span></td>
+              <td><span class="table-owner"><span class="project-avatar avatar-daniel" aria-hidden="true"><img src="assets/img/person.svg" alt="" /></span>Daniel Reyes</span></td>
+              <td>
+                <span class="project-status status-at-risk">
+                  <span class="status-dot" aria-hidden="true"></span>
+                  AT RISK
+                </span>
+              </td>
+              <td>Sep 04, 2026</td>
+              <td><div class="table-progress" role="img" aria-label="38% complete"><span style="width: 38%"></span></div><span class="table-progress-value">38%</span></td>
+            </tr>
+            <tr>
+              <td class="table-project"><strong>Q3 Brand Refresh</strong><span>Visual identity audit</span></td>
+              <td><span class="table-owner"><span class="project-avatar avatar-priya" aria-hidden="true"><img src="assets/img/person.svg" alt="" /></span>Priya Nair</span></td>
+              <td>
+                <span class="project-status status-planning">
+                  <span class="status-dot" aria-hidden="true"></span>
+                  PLANNING
+                </span>
+              </td>
+              <td>Sep 30, 2026</td>
+              <td><div class="table-progress" role="img" aria-label="12% complete"><span style="width: 12%"></span></div><span class="table-progress-value">12%</span></td>
+            </tr>
+            <tr>
+              <td class="table-project"><strong>Billing Self-Serve</strong><span>Customer portal</span></td>
+              <td><span class="table-owner"><span class="project-avatar avatar-theo" aria-hidden="true"><img src="assets/img/person.svg" alt="" /></span>Theo Lindqvist</span></td>
+              <td>
+                <span class="project-status status-blocked">
+                  <span class="status-dot" aria-hidden="true"></span>
+                  BLOCKED
+                </span>
+              </td>
+              <td>Aug 21, 2026</td>
+              <td><div class="table-progress" role="img" aria-label="71% complete"><span style="width: 71%"></span></div><span class="table-progress-value">71%</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</body>
+<script src="scripts/script.js"></script>
+
 </html>
